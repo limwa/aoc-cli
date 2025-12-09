@@ -84,6 +84,7 @@ __aoc_cmd_input_download() {
       elif [ "$STATUS_CODE" == "404" ]; then
         return 1
       else
+        mkdir -p "$(dirname "$OUTPUT_FILE")"
         curl_with_opts -o "$OUTPUT_FILE"
         chmod 444 "$OUTPUT_FILE"
       fi
