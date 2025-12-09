@@ -53,8 +53,8 @@ __aoc_cmd_session_invalidate() {
 __aoc_cmd_input_help() {
     echo "Usage: $0 input download|help" >&2
     echo "" >&2
-    echo "  download -- <day>  Download the input for the given day" >&2
-    echo "  help               Print this help message" >&2
+    echo "  download -- <day> [year]  Download the input for the given day" >&2
+    echo "  help                      Print this help message" >&2
     return 0
 }
 
